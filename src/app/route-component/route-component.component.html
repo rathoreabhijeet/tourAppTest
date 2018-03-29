@@ -1,0 +1,24 @@
+<h2 class="text-center margin-heading">Routes</h2>
+<div id="wrapper">
+  <ul class="list-overflow route-list">
+    <li class="relative" *ngFor="let point of route; let i = index">
+      <mat-card class="card-margin">
+        <mat-card-content>
+          <h3 (click)="drawPath(point,i,showWaypint[i])">{{point.name }} {{ i + 1}}</h3>
+          <i *ngIf="!showWaypint[i]" class="fa fa fa-plus fa-1x add-icon-style" aria-hidden="true" (click)="drawPath(point,i,showWaypint[i])">
+          </i>
+          <i *ngIf="showWaypint[i]" class="fa fa-close fa-1x add-icon-style" aria-hidden="true" (click)="drawPath(point,i,showWaypint[i])">
+          </i>
+          <div *ngIf="showWaypint[i]">
+            <div class="relative route-waypoint" *ngFor="let waypoint of point.waypoint; let j = index">
+              <p class="margin-right-30">{{waypoint}}
+                <i class="fa fa fa-trash fa-2x trash-icon-style red" aria-hidden="true" (click)="removeFromPath(point,i,j)"> </i>
+              </p>
+            </div>
+            <button class="button" (click)="addMorePointToRoute(point)">Add more point in Route</button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,62 @@
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    /* margin:auto */
+}
+.text-center{
+  text-align: center;
+}
+.pointer{
+  cursor: pointer;
+}
+.way-point-add-div-css{
+  background: #5ebd5e;
+    padding: 20px;
+    color: white;
+    margin: auto;
+    width: 22%;
+    position: absolute;
+    bottom: 10px;
+    left: 39%;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 2em;
+    font-weight: bold;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 0px;
+  border-top: 1px dotted #dce7eb;
+}
+.display-flex{
+  display: flex;
+}
+.check-box-style{
+      margin-top: 30px;
+    height: 20px;
+    width: 66px;
+}
+.margin-heading{
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+  background-color: #0786d4;
+  color: white;
+  padding-top: 10px;
+  margin-top: 0;
+}

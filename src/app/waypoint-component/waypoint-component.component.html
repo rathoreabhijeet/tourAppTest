@@ -1,0 +1,29 @@
+<div class="flex flex-column">
+  <h2 class="text-center margin-heading">
+    Way point</h2>
+  <div class="text-center">
+    <button class="button" (click)="showAddWayPointDiv(true)">Add way point</button>
+    <!-- <button class="button" (click)="drawmap()" *ngIf="wayPoint && wayPoint.length > 1">make route</button> -->
+  </div>
+  <ul class="list-overflow">
+    <li class="text-center display-flex pointer" *ngFor="let point of DatasharingProviderService.waypoint; let i = index" draggable="true"
+      (dragstart)="drag(event,DatasharingProviderService.waypoint[i])">
+      <mat-card class="card-margin">
+        <mat-card-content>
+          <section class="example-section">
+            <mat-checkbox class="example-margin" [(ngModel)]="DatasharingProviderService.checkPoints[i]" (change)="wayPointSelected(i)">{{point}}</mat-checkbox>
+          </section>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- <div class="card">
+      <input type="checkbox" class="check-box-style" [(ngModel)]="DatasharingProviderService.checkPoints[i]" (change)="wayPointSelected(i)"
+      />
+      <p class="bold">{{point}}</p>
+    </div> -->
+    </li>
+  </ul>
+  <div class="way-point-add-div-css" *ngIf="DatasharingProviderService.addwaypoint" >
+    Click on the location of way point to add in Routes
+  </div>
+</div>

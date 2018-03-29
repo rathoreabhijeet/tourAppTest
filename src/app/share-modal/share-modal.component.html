@@ -1,0 +1,15 @@
+
+<table>
+  <tr>
+    <th>Select</th>
+    <th>Name</th>
+    <th>Email</th>
+
+  </tr>
+  <tr *ngFor="let driver of DummyDriver; let i = index">
+    <td><input type="checkbox" class="check-box-style"/></td>
+    <td>{{driver.name}}</td>
+    <td>{{driver.email}}</td>
+  </tr>
+</table>
+    <button mat-raised-button (click)="onNoClick()" class="send-button-style">Send</button>

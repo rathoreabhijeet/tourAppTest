@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+.grey-bg{
+    background: #fafafa;
+}
+.dialog-body{
+  height: 150px;
+}
+.flex{
+  display: flex;
+}
+.flex-column{
+  flex-direction: column;
+}
+.flex-around{
+  justify-content: space-around;
+}
+.pointer{
+  cursor: pointer;
+}
+.card{
+  background: white;
+  border-radius: 4px;
+  box-shadow: 5px 10px 15px #444;
+}
+.flex-2{
+  flex: 2;
+  max-width: 20%;
+}
+.flex-6{
+  flex: 6;
+  max-width: 60%;
+}
+.full-height{
+  height: 100vh;
+}
+.list-overflow{
+  overflow: scroll;
+    height: calc(100vh - 130px);
+}
+.flex-column{
+  flex-direction: column;
+}
+.mat-checkbox-label{
+  white-space: normal;
+}
+.card-margin{
+  margin: 5px;
+}
+.route-list{
+  list-style: none;
+  padding: 0;
+}
+.route-list i{
+  margin-top: 15px;
+}
+.mat-card{
+  padding: 15px !important;
+}
+.route-waypoint{
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 3px;
+}
+.red{
+  color: red;
+}

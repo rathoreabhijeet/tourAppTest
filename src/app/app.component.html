@@ -1,0 +1,17 @@
+<div style="display:flex">
+  <div class="flex-2 full-height">
+
+    <app-route-component></app-route-component>
+  </div>
+
+  <div #gmap class="flex-6 full-height" (dragover)="allowDrop($event)" (drop)="drop($event)"></div>
+
+
+  <div class=" flex-2 full-height">
+    <app-waypoint-component></app-waypoint-component>
+  </div>
+</div>
+<div class="draw-path-style" (click)="drawmap()" *ngIf="DatasharingProviderService.drawPath">
+  Draw Route
+</div>
+<button class="button share-button-css" (click)="openDialog()" *ngIf="DatasharingProviderService.shareMode">Share this location</button>
